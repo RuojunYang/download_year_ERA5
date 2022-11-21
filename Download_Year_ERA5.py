@@ -55,7 +55,7 @@ def download(year='2021'):
                 ],
                 'format': 'netcdf',
             },
-            './download/' + year + '_' + each + '.nc')
+            config.get('path', 'output') + '/' + year + '_' + each + '.nc')
         print("end download " + each + " in " + year)
 
 
